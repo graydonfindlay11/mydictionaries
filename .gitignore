@@ -1,0 +1,3 @@
+.venv/
+
+#  *csv     --wild card that ignores all csv files (b/c of *)
