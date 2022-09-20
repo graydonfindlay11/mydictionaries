@@ -136,7 +136,7 @@ phone = phonebook.get('Chris', 'key not found')
 print(phone)
 print()
 
-#phonebook.clear()
+#phonebook.clear()            --clears out elements of phonebook but doesnt delete it
 #print(phonebook)
 
 print()
@@ -144,7 +144,6 @@ print('*****  end section 6 ********')
 print()
 
 
-'''
 
 
 
@@ -153,8 +152,9 @@ print('*****  start section 7 - using pop method ********')
 print()
 
 
+#a = phonebook.pop('Chris','not found')     #finds a key and pops out the information from phonebook
 
-
+#print(a)
 
 
 print()
@@ -163,12 +163,15 @@ print()
 
 
 
+
 print()
 print('*****  start section 8 - using popitem ********')
 print()
 
 
+#a = phonebook.popitem()      #random part doesnt work, it just pops out the last element
 
+#print(a)
 
 
 
@@ -178,12 +181,28 @@ print()
 
 
 
+
 print()
 print('*****  start section 9 - using random and converting to list ********')
 print()
 
+list_of_keys = list(phonebook)
+print(list_of_keys)
+
+random_key = random.choice(list_of_keys)
+print()
+print(random_key)
+print()
 
 
+random_value = phonebook[random_key]
+print(random_value)
+print()
+
+#Alternatively
+
+random_value = phonebook[random.choice(list(phonebook))]    #this is the same as above code but condensed
+print(random_value)
 
 
 print()
@@ -191,7 +210,6 @@ print('*****  end section 9 ********')
 print()
 
 
-'''
 
 
 

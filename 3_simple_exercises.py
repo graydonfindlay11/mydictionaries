@@ -13,6 +13,11 @@ sampleDict = {
    }
 }
 
+print()
+print(sampleDict["class"]["student"]["marks"]["history"])
+print()
+
+
 
 
 
@@ -20,6 +25,9 @@ sampleDict = {
 
 dict={"son's name": "Lucas", "son's eyes": "green", "son's height": 32, "son's weight": 25}
 
+dict["son's height"] += 2
+print(dict)
+print()
 
 
 
@@ -33,6 +41,9 @@ sampleDict = {
 }
 
 
+sampleDict ["emp3"]["salary"] = 8500
+print(sampleDict)
+print()
 
 
 
@@ -43,3 +54,6 @@ sampleDict = {
 dict={"name": "Plato", "country": "Ancient Greece", "born": -427, "teacher": "Socrates", "student": "Aristotle"}
 
 
+dict["work"] = ["Apology", "Phaedo", "Republic", "Symposium"]
+print(dict)
+print()
